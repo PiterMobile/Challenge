@@ -1,0 +1,153 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap'); 
+
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bight-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --font: font-family: 'Red Hat Display', sans-serif;
+
+    --maxw: 23.4375rem;
+    --margin: 1.8rem;
+    --spacing: -0.03rem;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--pale-blue) url(../img/pattern-background-mobile.svg) no-repeat;
+    background-size: 100vw;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.summary {
+    max-width: var(--maxw);
+    background: white;
+    text-align: center;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.1rem 1.1rem var(--desaturated-blue);
+}
+
+.hero {
+    max-width: var(--maxw);
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+h2 {
+    margin: 2rem 0 1rem 0;
+    letter-spacing: var(--spacing);
+    color: var(--dark-blue);
+}
+
+p {
+    margin: 0 var(--margin);
+    padding: 0 1.3rem;
+    letter-spacing: var(--spacing);
+    line-height: 1.6rem;
+    color: var(--desaturated-blue);
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: var(--margin);
+    border-radius: .5rem;
+    background: var(--very-pale-blue);
+}
+
+.order img {
+    margin: auto 1.5rem ;
+}
+
+.order h5 {
+    margin-bottom: 0;
+    text-align: initial;
+    letter-spacing: var(--spacing);
+    color: var(--dark-blue);
+}
+
+.order p {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 0.91rem;
+}
+
+.order a {
+    margin: auto;
+    margin-right: 1.5rem;
+    color: var(--bight-blue);
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.order a:hover {
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    margin: var(--margin);
+    padding: 0.95rem 0;
+    width: calc(var(--maxw) - var(--margin)*2);
+    color: var(--pale-blue);
+    font-weight: 700;
+    font-size: .95rem;
+    border: none;
+    border-radius: .8rem;
+    background: var(--bight-blue);
+    box-shadow: 0 0.1rem 0.5rem var(--desaturated-blue);
+}
+
+button:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.cancel {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: var(--desaturated-blue);
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: var(--spacing);
+    text-decoration: none;
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+}
+
+
+@media screen and (min-width: 1440px) {
+    :root {
+        --maxw: 28.125rem;
+    }
+
+    body {
+        background: var(--pale-blue) url(../img/pattern-background-desktop.svg) no-repeat;
+        background-size: 100vw;
+    }
+    
+}
