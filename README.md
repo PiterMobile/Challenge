@@ -1,3 +1,3 @@
 # Frontend Challenge
 
-[Order summary card](Order-summary/index.html)
+[Order summary card](Challenge/Order-summary/index.html)
