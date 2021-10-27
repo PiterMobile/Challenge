@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/PiterMobile/Challenge/tree/master/Order-summary)
+- Live Site URL: [Order-summary](https://pitermobile.github.io/Challenge/Order-summary/index.html)
 
 ## My process
 
