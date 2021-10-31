@@ -1,0 +1,34 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+/* font: Inter (400, 700), Lexend Deca (700) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@700&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+}
+
+:root {
+    --font: 'Inter', 'Lexend Deca', sans-serif;
+
+    /* (main background) */
+    --very-dark-blue: hsl(233, 47%, 7%);
+    /* (card background) */
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    /* (accent) */
+    --soft-violet: hsl(277, 64%, 61%);
+    /* (main heading, stats) */
+    --white: hsl(0, 0%, 100%);
+    /* (main paragraph) */
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (stat headings) */
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    background: var(--very-dark-blue);
+}
