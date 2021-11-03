@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile design](screanshot/Screenshot_desktop.png)
-![Desctop design](screanshot/Screenshot_mobile.png)
+![Mobile design](screenshot/Screenshot_desktop.png)
+![Desctop design](screenshot/Screenshot_mobile.png)
 
 ### Links
 
