@@ -2,4 +2,6 @@
 
 ### From frontendmentor.io/
 
-- [Order summary card](https://pitermobile.github.io/Challenge/Order-summary/index.html)
+- [Order summary card](https://pitermobile.github.io/Challenge/Order-summary/)
+
+- [Stats preview card](https://pitermobile.github.io/Challenge/Stats-preview-card/)
