@@ -1,0 +1,128 @@
+/* Normalizer */
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+
+:root {
+  --font-h1: 700 2.45rem/2.6rem "Big Shoulders Display", cursive;
+  --font-p: 400 0.9375rem/1.3rem "Lexend Deca", sans-serif;
+
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* (paragraphs) */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  --radius: 0.5rem;
+}
+
+body {
+  background: var(--very-light-gray);
+  margin: 1.7rem;
+}
+
+section {
+  padding: 3.2rem;
+  max-width: 335px;
+}
+
+section:first-child {
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+section:last-child {
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.borange,
+.borange > a:hover {
+  background: var(--bright-orange);
+}
+
+.dcyan,
+.dcyan > a:hover {
+  background: var(--dark-cyan);
+}
+
+.vdcyan,
+.vdcyan > a:hover {
+  background: var(--very-dark-cyan);
+}
+
+h1 {
+  margin: 2rem 0;
+  font: var(--font-h1);
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+}
+
+h1,
+p {
+  letter-spacing: 0.017rem;
+}
+
+p {
+  margin-bottom: 2.8rem;
+  font: var(--font-p);
+  color: var(--transparent-white);
+}
+
+section a {
+  padding: 1rem 2.3rem;
+  font: var(--font-p);
+  text-transform: capitalize;
+  text-decoration: none;
+  background: var(--very-light-gray);
+  border: none;
+  border-radius: 2rem;
+}
+
+.borange > a {
+  color: var(--bright-orange);
+}
+
+.dcyan > a {
+  color: var(--dark-cyan);
+}
+
+.vdcyan > a {
+  color: var(--very-dark-cyan);
+}
+
+section a:hover {
+  color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+}
+
+.attribution {
+  margin: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+  }
+  section:first-child {
+    border-radius: var(--radius) 0 0 var(--radius);
+  }
+
+  section:last-child {
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+}
