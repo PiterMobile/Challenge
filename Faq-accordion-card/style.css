@@ -1,0 +1,118 @@
+/* Normalizer */
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+
+:root {
+  /* Background gradient: */
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+
+  /* Text */
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+
+  /* Dividers */
+  --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(var(--soft-violet), var(--soft-blue)) no-repeat
+    center fixed;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20vh;
+}
+
+.faq {
+  width: 88vw;
+  min-height: 65vh;
+  border-radius: 2rem 2rem 1.5rem 1.5rem;
+  background: var(--light-grayish-blue);
+}
+picture img {
+  display: block;
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.ilustration img {
+  margin: -53vw auto 3.5rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+details {
+  margin: 1.4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+details summary {
+  font-size: 0.9rem;
+  color: var(--very-dark-grayish-blue);
+  cursor: pointer;
+  list-style: none;
+}
+
+details[open] summary {
+  color: black;
+  font-weight: 700;
+}
+
+details summary::after {
+  display: block;
+  float: right;
+  content: "";
+  background: url("images/icon-arrow-down.svg") no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+/* summary img {
+  float: right;
+}
+
+details[open] summary img {
+  transform: rotate(180deg);
+} */
+
+details p {
+  margin: 0;
+  padding: 0.7rem 1.5rem 0 0;
+  font-size: 0.813rem;
+  line-height: 1.25rem;
+  color: var(--dark-grayish-blue);
+}
+
+/* attribution */
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(231, 16%, 17%);
+}
