@@ -42,9 +42,10 @@ main {
 .faq {
   width: 88vw;
   min-height: 65vh;
-  border-radius: 2rem 2rem 1.5rem 1.5rem;
-  background: var(--light-grayish-blue);
+  border-radius: 1.5rem;
+  background: white;
 }
+
 picture img {
   display: block;
   margin: 0 auto;
@@ -55,14 +56,17 @@ picture img {
   margin: -53vw auto 3.5rem;
 }
 
+article {
+  margin: 0 1.5rem;
+}
 h1 {
   margin-bottom: 2rem;
   text-align: center;
 }
 details {
-  margin: 1.4rem;
+  margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--light-grayish-blue);
 }
 
 details summary {
@@ -115,4 +119,34 @@ details p {
 }
 .attribution a {
   color: hsl(231, 16%, 17%);
+}
+
+@media screen and (min-width: 1440px) {
+  .faq {
+    display: flex;
+    width: 60rem;
+    min-height: 33.125rem;
+    overflow: hidden;
+  }
+  picture img {
+    /* display: inline; */
+  }
+  .shadow img {
+    margin: -19.6875rem 0 -6.25rem -34.75rem;
+    width: 60rem;
+  }
+  .ilustration img {
+    margin: 4.875rem 0 0 -30rem;
+    width: 30rem;
+  }
+
+  article {
+    margin: 3.3rem 6rem;
+  }
+  h1 {
+    text-align: left;
+  }
+  details summary {
+    width: 364px;
+  }
 }
