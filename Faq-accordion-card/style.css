@@ -128,9 +128,9 @@ details p {
   .box {
     display: inline;
     width: 12rem;
-    position: absolute;
-    top: 21.6rem;
-    left: 23.5rem;
+    position: relative;
+    top: 13.6rem;
+    left: 6.4rem;
   }
 
   .faq {
