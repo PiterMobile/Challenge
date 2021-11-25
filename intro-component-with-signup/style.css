@@ -85,22 +85,26 @@ form {
 }
 
 input {
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   padding: 0.9rem;
   width: calc(100vw - 6rem);
   border: 1px solid gainsboro;
   border-radius: 0.2rem;
+}
+
+input,
+.error {
   transition: 0.5s ease-in-out;
 }
+
 input::placeholder {
   font-weight: 600;
   font-size: 0.9rem;
 }
+
 input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
 input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
 input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
-  /* padding: 0.9rem 4rem 0.9rem 0.9rem;
-  background: url(images/icon-error.svg) no-repeat 90% center; */
   border-color: var(--red);
 }
 
@@ -126,6 +130,27 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #77e2b4;
   box-shadow: 0 4px 0 #2fbb7eb6;
+}
+
+.error {
+  opacity: 0;
+  position: relative;
+  font-size: 0.7rem;
+  color: var(--red);
+  text-align: right;
+}
+
+.error img {
+  position: absolute;
+  bottom: 2rem;
+  right: 0.5rem;
+}
+
+input[type="text"]:invalid:not(:focus):not(:placeholder-shown) + .error,
+input[type="email"]:invalid:not(:focus):not(:placeholder-shown) + .error,
+input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + .error {
+  margin-bottom: 1rem;
+  opacity: 1;
 }
 
 p small {

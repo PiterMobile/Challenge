@@ -36,6 +36,11 @@
             required
             pattern="(\w){3,}"
           />
+          <div class="error">
+            <i>First Name cannot by empty</i>
+            <img src="images/icon-error.svg" />
+          </div>
+
           <input
             type="text"
             name="lname"
@@ -43,12 +48,20 @@
             required
             pattern="(\w){3,}"
           />
+          <div class="error">
+            <i>Last Naame cannot by empty</i>
+            <img src="images/icon-error.svg" />
+          </div>
           <input
             type="email"
             name="email"
             placeholder="Email Address"
             required
           />
+          <div class="error">
+            <i>Looks like this is not an email</i>
+            <img src="images/icon-error.svg" />
+          </div>
           <input
             type="password"
             name="password"
@@ -56,6 +69,10 @@
             required
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
           />
+          <div class="error">
+            <i>Password cannot by empty</i>
+            <img src="images/icon-error.svg" />
+          </div>
           <input type="submit" value="Claim your free trial" />
         </form>
         <p>
@@ -66,5 +83,6 @@
         </p>
       </section>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
