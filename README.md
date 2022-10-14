@@ -9,3 +9,5 @@
 - [3 column preview card](https://pitermobile.github.io/Challenge/3-column-preview/)
 
 - [Faq accordion card](https://pitermobile.github.io/Challenge/Faq-accordion-card/)
+
+- [Intro component with sign up form solution](https://pitermobile.github.io/Challenge/intro-component-with-signup/)
