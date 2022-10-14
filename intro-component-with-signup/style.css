@@ -61,6 +61,7 @@ small {
 }
 
 .cta {
+  width: 100%;
   display: block;
   margin-bottom: 1.5rem;
   padding: 1rem 4rem;
@@ -101,7 +102,7 @@ input::placeholder {
   font-weight: 600;
   font-size: 0.9rem;
 }
-
+.border,
 input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
 input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
 input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
@@ -145,7 +146,7 @@ input[type="submit"]:hover {
   bottom: 2rem;
   right: 0.5rem;
 }
-
+.on,
 input[type="text"]:invalid:not(:focus):not(:placeholder-shown) + .error,
 input[type="email"]:invalid:not(:focus):not(:placeholder-shown) + .error,
 input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + .error {
@@ -155,7 +156,7 @@ input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + .error {
 
 p small {
   display: block;
-  padding: 0 3rem;
+  padding: 0 3rem 2rem;
   font-size: 0.7rem;
   line-height: 1.5rem;
   color: var(--grayish-blue);
@@ -165,4 +166,35 @@ p small a {
   font-weight: 700;
   text-decoration: none;
   color: var(--red);
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 100vh;
+    width: 70vw;
+  }
+
+  .intro {
+    margin: 0 auto;
+    max-width: 30vw;
+    text-align: left;
+  }
+
+  .intro h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  div .form,
+  div form {
+    width: auto;
+  }
+
+  input{
+    width: 100%;
+  }
 }
