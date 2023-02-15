@@ -12,21 +12,24 @@ box-sizing: border-box;
 }
 body {
 background: rgb(128,9,13);
-background: radial-gradient(circle, rgba(128,9,13,1) 0%, rgba(47,4,6,1) 100%); 
+background: radial-gradient(circle, rgba(128,9,13,1) 0%, rgba(47,4,6,1) 100%);
+font-family: 'Alegreya', serif;
 }
 div {
-height: 100vh;
+min-height: 10vh;
 display: flex;
 flex-direction: column;
 align-items: center;
 }
 svg {
+margin-top: 2rem;
 width: 20rem;
 height: 20rem;
+fill: #fee09e;
 }
 q {
+margin-top: 2rem;
 width: 70vw;
-font-family: 'Alegreya', serif;
 font-size: 4rem;
 text-align: center;
 text-transform: capitalize;
@@ -52,6 +55,14 @@ animation: MoveBackgroundPosition 60s ease-in-out infinite;
   100% {
     background-position: 0% 50%
   }
+}
+p:first-child {
+margin-top: 4rem;
+}
+p {
+margin-bottom: 2rem;
+width: 40vw;
+color: #fee09e;
 }
 </style>
 <script>
@@ -111,6 +122,18 @@ document.getElementById("verse").innerHTML = verse;
 </g>
 </svg>
 <q id="verse"></q>
+</div>
+<div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna blandit, maximus justo in, imperdiet odio. Nulla rutrum pellentesque egestas. Ut gravida at tellus eget molestie. Nulla vitae dapibus sapien. Cras at orci id libero viverra venenatis. Duis dignissim maximus urna at iaculis. Quisque vehicula ipsum sit amet nulla pharetra molestie. Integer id leo a lacus interdum porta at congue purus.
+</p>
+<p>Curabitur varius nisi vel lectus consectetur, nec euismod justo dignissim. Curabitur blandit, nisi quis viverra gravida, justo sapien feugiat purus, quis facilisis lectus tellus ornare nisl. Maecenas lobortis odio et posuere blandit. Sed lobortis, lectus tempor posuere pellentesque, metus odio accumsan quam, a vehicula dolor quam hendrerit libero. In hac habitasse platea dictumst. Cras vehicula mi ipsum, quis semper neque dictum eu. Etiam placerat, est id ultrices ultricies, lacus massa congue elit, sit amet commodo mi ligula a felis. Quisque pretium augue arcu, at venenatis tortor maximus et. Nam auctor ex urna, vel finibus massa pellentesque eget. Quisque ullamcorper, lorem ac tempus consequat, libero ligula ullamcorper nulla, id lobortis lacus lectus nec leo.
+</p>
+<p>Suspendisse commodo at nibh quis cursus. Integer a sem quis turpis euismod malesuada. Donec sapien sapien, feugiat sit amet dolor ac, sagittis placerat ligula. Mauris magna turpis, gravida et erat eu, tincidunt commodo ex. Integer ut consectetur mauris, ut efficitur urna. Nulla et efficitur magna, id tincidunt lacus. Aenean non ligula erat. Suspendisse potenti. Maecenas iaculis id est vel efficitur. Phasellus a sollicitudin arcu, vel sollicitudin odio. Aliquam fringilla diam lacinia vestibulum aliquam. Morbi in convallis erat. Sed hendrerit, orci sit amet fermentum commodo, libero ex lobortis sem, eget ultrices lacus sapien ac felis. In hac habitasse platea dictumst.
+</p>
+<p>Sed imperdiet mauris et tellus fringilla rutrum. Donec sit amet blandit lacus, sit amet ultricies neque. Proin blandit, mauris eu sodales consequat, turpis lorem euismod diam, vitae scelerisque odio massa ut dui. Aliquam elit nunc, tristique egestas mollis non, fermentum a nibh. In pretium ex id sapien molestie mollis. Aliquam iaculis dictum nibh, sit amet molestie dui dignissim vitae. Donec euismod fermentum ante quis lacinia. Pellentesque euismod porta lorem. Etiam fringilla sapien quis velit placerat malesuada in vel augue. Curabitur non commodo ex. Fusce vehicula arcu sed ipsum lobortis, et iaculis sem ultrices. Maecenas nec viverra mi. Mauris rutrum libero elit, vel iaculis leo dapibus vitae.
+</p>
+<p>Curabitur feugiat semper nibh, vel pretium risus. Aenean vitae cursus lorem. Suspendisse non arcu dignissim, ultricies erat in, maximus sapien. Duis nec odio quis mauris placerat ultrices vel ut ligula. Morbi maximus egestas eros, feugiat tempor purus semper sed. Aliquam erat volutpat. Mauris rhoncus viverra enim, vel lacinia erat auctor at. Donec posuere, enim quis porta blandit, mi magna convallis felis, ac tempor metus diam iaculis libero. Morbi suscipit metus arcu, sit amet laoreet turpis tempor et. Mauris condimentum varius fermentum. Cras sagittis et magna non commodo. Fusce ullamcorper, orci at convallis dapibus, leo nulla venenatis nibh, in iaculis felis nunc vel enim. Duis tristique augue blandit venenatis tristique. Aenean at odio a mi interdum sagittis. 
+</p>
 </div>
 </body>
 </html>
