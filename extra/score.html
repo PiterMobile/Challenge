@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scores Race</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background-color: #f0f0f0; 
+            margin: 0; 
+            padding: 20px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+        }
+        h1 { 
+            color: #333; 
+        }
+        .chart-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+        }
+        .line { 
+            fill: none; 
+            stroke-width: 3px; 
+        }
+        .controls { 
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+        }
+        .slider-container {
+            width: 400%;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .slider {
+            width: 100%;
+        }
+        .player-label { 
+            font-size: 14px; 
+            font-weight: bold; 
+            background-color: #fff; 
+            padding: 2px 5px; 
+            border-radius: 3px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+        }
+        .legend {
+            margin-left: 20px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Score Race</h1>
+    <div class="chart-container">
+        <div id="chart"></div>
+        <div class="legend" id="legend"></div>
+    </div>
+    <div class="controls">
+        <div class="slider-container">
+            <input type="range" min="0" max="47" value="0" class="slider" id="stepSlider">
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="score_app.js"></script>
+</body>
+</html>
